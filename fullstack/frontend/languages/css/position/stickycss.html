@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><button><a href="../index.html">back</a></button>
+    <style>
+        div{
+            background-color:burlywood;
+            border: 2px solid rgb(74, 72, 80);
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+    <div>
+data
+    </div>
+    <p>
+        High Contrast
+        Log in
+        Start free or get a demo
+        
+        
+        Blogs
+        
+        
+        
+        
+        
+        
+        
+        
+        Newsletters
+        
+        
+        
+        Videos
+        
+        
+        
+        
+        
+        
+        
+        Podcasts
+        
+        
+        
+        
+        
+        
+        
+        
+        Resources
+        
+        
+        
+        
+        
+        
+        Search...
+        
+        HubSpot Products
+        
+        
+        
+        
+        
+        
+        
+        
+        How to Use CSS Position Sticky
+        Anna Fitzgerald
+        Anna Fitzgerald
+        Published: December 19, 2022
+        
+        Want to learn how to use the CSS position: sticky property?
+        
+        two people using the css position sticky property on an office computer
+        In CSS, there are hundreds of properties that enable you to control the look and feel of your web page. One of the most commonly used is the CSS position property, which allows you to position page elements. Whether you’re building your site from scratch or using a framework like Bootstrap CSS, this property can make your life as a developer a lot easier.
+        
+        Download Now: 25 Free HTML & CSS Hacks
+        There are a variety of position types, including static, relative, fixed, absolute, and sticky positioning. In this post, we’ll explore the sticky position type so you can create sticky elements on your pages.
+        
+        In this post, we’ll cover:
+        
+        what CSS position: sticky is
+        how to create a sticky element in HTML
+        how to create a sticky element in Bootstrap CSS
+        what to do if the sticky element isn't working
+        Let’s get started.
+        
+        What is CSS position: sticky?
+        By default, HTML elements are static. This means that they are displayed on the page according to where the element is placed in the flow of the HTML document. For example, a div element placed after a paragraph element in the HTML file will appear farther down the page by default
+        
+        
+        However, if an element is defined with the CSS position sticky, its position will change as the user scrolls down the page.
+        
+        A sticky element is positioned relative to its initial position in the HTML flow, until it crosses a threshold in the viewport (in other words, the user scrolls past a certain point on the page). At that point, the element “sticks” in place until it reaches the boundary of its parent element. This offset point is defined by specifying top, right, bottom, or left in the CSS position property.
+        
+        Note: The sticky position has some browser compatibility issues. Internet Explorer and Edge 15 (as well as earlier versions) do not support this position type. Safari does, but it requires a vendor webkit. We’ll see that in the first example.
+        
+        Now let’s take a look at some examples using sticky positioning below.
+        
+        How to Create a Sticky Element in HTML
+        Let’s say you have your website name above your navigation bar on your homepage. When the user scrolls far enough down the page that the navigation bar is at the very top of the screen, you want the navigation bar to stay fixed 10 pixels from the top.
+        
+        Here’s the CSS you’d use to create a div that sticks 10 pixels from the top of the screen (plus some margin and padding properties to make the layout prettier).
+        
+        
+        How to Create a Sticky Element in Bootstrap
+        Creating sticky elements in Bootstrap differs slightly from the process explained above. That’s because Bootstrap has shorthand for quickly configuring the position of an element. These quick positioning classes are:
+        
+        class="position-static”
+        class="position-relative”
+        class="position-absolute”
+        class="position-fixed”
+        class="position-sticky”
+        class="fixed-top"
+        class="fixed-bottom"
+        class="sticky-top"
+        Simply add the shorthand utility for sticky positioning in your HTML and define how far from the top, bottom, left, or right you want the element to stick in your CSS. If you use the .sticky-top class, then you won't have to add anything in your CSS.
+        
+        Say you want to make a sticky top Bootstrap navbar. To start, create a Bootstrap navbar without defined positioning. Then, add the .sticky-top utility as a class name of the nav element in your HTML.
+        
+        
+        Why is position sticky not working?
+        When learning the sticky property, you may run into some bugs.
+        
+        For instance, if your element isn’t sticking, then go back to your HTML. If you placed the element with the sticky position style alone inside a wrapper element, it won’t stick.
+        
+        This is because the sticky item’s container (or parent element) is the only area in which it can stick, the sticky item can only float over sibling elements. In other words, your sticky item cannot be an only child.
+        
+        Let’s say you have a header above your Bootstrap navbar and you want the navbar to stick to the top of the screen once the user scrolls past its defined point. Then you’d use this CSS:
+        
+        CSS
+        .position-sticky {
+            top: 0;
+        }
+        The HTML below is incorrect because the sticky navbar is wrapped in a div element all alone. The navbar will not stick as a result.
+        
+        
+        The HTML below is correct because it has one parent div element that wraps around multiple child elements, including the sticky navbar as well as the heading and paragraph elements.
+        With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.vvWith the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.With the CSS position property, you can move elements around on your page. If you’d like the position of an element to depend on the front-end user's scroll position, then you can use sticky positioning. With this position type, you can create sticky navigation bars, headers, footers, and more.
+
+        Editor's note: This post was originally published in May 2020 and has been updated for comprehensiveness.
+
+
+    </body>
+</html>
