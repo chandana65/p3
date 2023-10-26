@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <center><h1>GRID</h1></center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<body bgcolor="blue"> <button><a href="../responsive design/responsivecss.html">back</a></button>
+    <h2> CSS grid creates complex responsive web design grid layouts more easily and consistently across browsers. Historically, there have been other methods for controlling web page layout methods, such as tables, floats, and more recently, CSS Flexible Box Layout.</h2>
+    <style>
+        .container{
+            font-size: 40px;
+            color: rgb(226, 49, 49);
+            display: grid;
+            grid-template-rows: repeat(3,200px);
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        }
+        .box{
+        
+            background-color: rgb(177, 174, 174);
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+    </style>
+
+    <div class="container">
+
+        <div class="box">box-a</div>
+        <div class="box">box-b</div>
+        <div class="box">box-c</div>
+        <div class="box">box-d</div>
+        <div class="box">box-e</div>
+        <div class="box">box-f</div>
+    </div>
+
+</body>
+</html>
