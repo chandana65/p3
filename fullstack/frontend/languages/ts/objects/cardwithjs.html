@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+<div id="root">
+
+
+</div>
+
+
+<script>
+
+let item1={
+    title:"gucchi bag",
+    prise:"1000",
+    iscription:"very nise bag",
+    img:'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
+}
+let item2={
+    title:"samsung bag",
+    prise:"1000",
+    iscription:"very nise bag",
+    img:'https://i0.wp.com/post.healthline.com/wp-content/uploads/2023/01/2672176-The-Best-Topical-Treatments-for-Hidradenitis-Suppurativa-for-2023-1296x728-Header-81b9bf.jpg?w=1155&h=1528'
+}
+let item3={
+    title:"samsung bag",
+    prise:"1000",
+    iscription:"very nise bag",
+    img:'https://static.toiimg.com/thumb/msid-84674609,width-1280,resizemode-4/84674609.jpg'
+}
+let item4={
+    title:"samsung bag",
+    prise:"1000",
+    iscription:"very nise bag",
+    img:'https://thumbs.dreamstime.com/b/bath-beauty-products-24145725.jpg'
+}
+let item5={
+    title:"samsung bag",
+    prise:"1000",
+    iscription:"",
+    img:'https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651'
+}
+
+
+let list=[item1,item2,item3,item4,item5]
+let data=document.getElementById('root')
+
+list.map((item)=>{
+
+    let img=document.createElement('img')
+img.style.height="150px"
+img.src=item.img
+data.appendChild(img)
+
+})
+
+</script>
+
+
+
+</body>
+</html>
