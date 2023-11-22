@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button><a href="../index.html">back</a></button>
+</head>
+<body>
+
+
+    <center><h1>SYNCRONUS-ASYNCRONUS</h1></center>
+
+    <br>
+    <h2>Synchronous JavaScript:</h2> 
+    <H4> As the name suggests synchronous means to be in a sequence, <BR> i.e. every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.</H4> 
+
+ 
+
+   <h3>SYNCRONOUS EXAMPLE:-</h3>
+    <script> 
+        document.write("Hi"); // First 
+        document.write("<br>"); 
+    
+        document.write("Harshitha") ;// Second 
+        document.write("<br>"); 
+        
+        document.write("How are you"); // Third 
+    </script> 
+    <BR> <br> <br>
+    <h2>Asynchronous JavaScript: </h2>
+   <h4>Asynchronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one. This may not look like a big problem but when you see it in a bigger picture you realize that it may lead to delaying the User Interface.</h4> 
+    <h3>ASYNCRONOUS EXAMPLE:-</h3>
+    <script> 
+        document.write("Hi"); 
+        document.write("<br>"); 
+    
+        setTimeout(() => { 
+            document.write("Let us see what happens"); 
+        }, 2000); 
+    
+        document.write("<br>"); 
+        document.write("End"); 
+        document.write("<br>"); 
+    </script> 
+    
+    
+</body>
+</html>
